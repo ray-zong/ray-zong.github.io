@@ -69,10 +69,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-boost/boost函数：is_permutation" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-欢迎" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/03/09/boost/boost函数：is_permutation/" class="article-date">
-  <time datetime="2017-03-09T11:00:00.000Z" itemprop="datePublished">2017/03/09</time>
+    <a href="/2017/12/01/欢迎/" class="article-date">
+  <time datetime="2017-11-30T16:00:00.000Z" itemprop="datePublished">2017/12/01</time>
 </a>
     
   </div>
@@ -83,7 +83,50 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/09/boost/boost函数：is_permutation/">boost函数：is_permutation</a>
+      <a class="article-title" href="/2017/12/01/欢迎/">欢迎</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>“平凡人生”是为了记录点滴生活而创建的个人网站。</p>
+        
+          <p class="article-more-link">
+            <a href="/2017/12/01/欢迎/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2017/12/01/欢迎/" data-id="cjawfl4rc00000kwehs6h5sj6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/欢迎/">欢迎</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-生活杂谈/零碎话语" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/04/01/生活杂谈/零碎话语/" class="article-date">
+  <time datetime="2017-03-31T16:00:00.000Z" itemprop="datePublished">2017/04/01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/01/生活杂谈/零碎话语/">零碎话语</a>
     </h1>
   
 
@@ -92,18 +135,144 @@
     <div class="article-entry" itemprop="articleBody">
       
         <a id="more"></a>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt; <span class="class"><span class="keyword">class</span> <span class="title">ForwardIterator1</span>, <span class="title">class</span> <span class="title">ForwardIterator2</span> &gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">is_permutation</span> ( <span class="title">ForwardIterator1</span> <span class="title">first1</span>, <span class="title">ForwardIterator1</span> <span class="title">last1</span>, <span class="title">ForwardIterator2</span> <span class="title">first2</span> );</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt; <span class="class"><span class="keyword">class</span> <span class="title">ForwardIterator1</span>, <span class="title">class</span> <span class="title">ForwardIterator2</span>, <span class="title">class</span> <span class="title">BinaryPredicate</span> &gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">is_permutation</span> ( <span class="title">ForwardIterator1</span> <span class="title">first1</span>, <span class="title">ForwardIterator1</span> <span class="title">last1</span>,</span></span><br><span class="line"><span class="class">                      <span class="title">ForwardIterator2</span> <span class="title">first2</span>, <span class="title">BinaryPredicate</span> <span class="title">p</span> );</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt; <span class="class"><span class="keyword">class</span> <span class="title">ForwardIterator1</span>, <span class="title">class</span> <span class="title">ForwardIterator2</span> &gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">is_permutation</span> ( <span class="title">ForwardIterator1</span> <span class="title">first1</span>, <span class="title">ForwardIterator1</span> <span class="title">last1</span>, <span class="title">ForwardIterator2</span> <span class="title">first2</span>, <span class="title">ForwardIterator2</span> <span class="title">last2</span> );</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range, <span class="keyword">typename</span> ForwardIterator&gt;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_permutation</span> <span class="params">( <span class="keyword">const</span> Range &amp;r, ForwardIterator first2 )</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range, <span class="keyword">typename</span> ForwardIterator, <span class="keyword">typename</span> BinaryPredicate&gt;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_permutation</span> <span class="params">( <span class="keyword">const</span> Range &amp;r, ForwardIterator first2, BinaryPredicate pred )</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt; <span class="class"><span class="keyword">class</span> <span class="title">ForwardIterator1</span>, <span class="title">class</span> <span class="title">ForwardIterator2</span>, <span class="title">class</span> <span class="title">BinaryPredicate</span> &gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">is_permutation</span> ( <span class="title">ForwardIterator1</span> <span class="title">first1</span>, <span class="title">ForwardIterator1</span> <span class="title">last1</span>,</span></span><br><span class="line"><span class="class">                      <span class="title">ForwardIterator2</span> <span class="title">first2</span>, <span class="title">ForwardIterator2</span> <span class="title">last2</span>,</span></span><br><span class="line"><span class="class">                      <span class="title">BinaryPredicate</span> <span class="title">p</span> );</span></span><br></pre></td></tr></table></figure>
-<p>简介：比较两个容器区间的元素是否一致(不是相等)。</p>
-<p>示例：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">int</span> myints_1[] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">14</span>, <span class="number">15</span>&#125;;</span><br><span class="line">    <span class="keyword">int</span> myints_2[] = &#123;<span class="number">15</span>, <span class="number">14</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; c1(myints_1, myints_1 + <span class="keyword">sizeof</span>(myints_1) / <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; c2(myints_2, myints_2 + <span class="keyword">sizeof</span>(myints_2) / <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line"></span><br><span class="line">    boost::algorithm::is_permutation ( c1.begin(),     c1.end (), c2.begin()); <span class="comment">//false</span></span><br><span class="line">    boost::algorithm::is_permutation ( c1.begin() + <span class="number">1</span>, c1.end (), c2.begin()); <span class="comment">//true</span></span><br><span class="line"></span><br><span class="line">    boost::algorithm::is_permutation ( c1.end (), c1.end (), c2.end()); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-<p>注意：</p>
-<p>下列函数的头文件在boost\algorithm\cxx14</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt; <span class="class"><span class="keyword">class</span> <span class="title">ForwardIterator1</span>, <span class="title">class</span> <span class="title">ForwardIterator2</span>, <span class="title">class</span> <span class="title">BinaryPredicate</span> &gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">is_permutation</span> ( <span class="title">ForwardIterator1</span> <span class="title">first1</span>, <span class="title">ForwardIterator1</span> <span class="title">last1</span>,</span></span><br><span class="line"><span class="class">                      <span class="title">ForwardIterator2</span> <span class="title">first2</span>, <span class="title">ForwardIterator2</span> <span class="title">last2</span>,</span></span><br><span class="line"><span class="class">                      <span class="title">BinaryPredicate</span> <span class="title">p</span> );</span></span><br></pre></td></tr></table></figure>
+<p>10.29<br>上帝是一个实验家，善恶不是衡量事物的标准。在恒长时间范围内，增加样本的多样性才是唯一的方向。因此，一个犯罪分子比一个普通人对世界或者上帝更有用。 ​​​​ </p>
+<p>9.21<br>历史的演进是对上帝领域的掠夺，从“上帝是一切”的远古时代到尼采的“上帝已死”。人类利用自己的智慧在精神领域攻城略地，似乎取得完全的胜利。然而，现实情况却正好相反，我们将上帝踢出脑海，赢来的却是对生命存在意义的最大质疑，道德的起源丧失立足之地。打着灯笼去寻找上帝，驱除对上帝迷信中的“迷”，保留纯粹的“信”。</p>
+<p>8.28<br>中国人祭拜民族英雄，尤其是开疆扩土的大将军的行为对被侵略国而言，是赤裸裸的炫耀和羞辱。这时的我们从来不去考虑他人的情感，但却希望别人在祭拜自己的英雄时考虑我们的情感。双重标准的矛盾要求完美的统一于人类身上。（对比越南和日本的历史） ​​​​ </p>
+<p>8.5<br>理性是先天的，后天的感性来自于对物质世界的各类感知，并交由人的身体的各类化学反应刺激大脑产生。若理性是人成为人的必要条件，是高于感性的存在，那么变性人是不是在理性方面高于正常人，他完全抑制住了荷尔蒙对大脑的刺激？ ​​​​ </p>
+<p>7.27<br>你我只是普通的一员，现代的社会，不论你有任何绝妙的观点，你都可以发现有人有比这更好的观点，或许人家还更加系统。我应该怎么来表征自己的独特性？ ​​​​ </p>
+<p>7.19<br>柏拉图的《理想国》在阐述国家治理的同时，也在极力否定中下层人民的价值。最后一卷讲述的神话，略带谎言性质。它并没有论证故事的真实性，而只是简单的让读者去相信它，用神的裁决来为正义保驾护航。 ​​​​ </p>
+<p>7.2<br>人生而自由，却无往而不在枷锁中。 ​​​​ </p>
+<p>7.2<br>对成功女神这婊子的排他性崇拜是我们民族的弊病。-威廉·詹姆斯 ​​​​ </p>
+<p>6.15<br>非正义的至高之境就是金玉其外败絮其中  《理想国》P36 ​​​​ </p>
+<p>5.30<br>树欲静而风不止。树动，风动，心动。答曰:心动。 ​​​​ </p>
+<p>5.25<br>客观上相等的时间间隔，对于不同的人会产生不同的主观上的时间差。一个思维敏捷的人在同等条件下会思考的更多，获得的感悟也会更多。同样的年龄并不意味着同样的成长。 ​​​​ </p>
+<p>5.24<br>共享经济的理念：you only pay for what you use.(你只为你所使用的东西(资源、信息、服务…)付费。) ​​​​ </p>
+<p>5.23<br>一场围棋游戏的竞技，重在参与，提高围棋的关注度，赢与不赢无关紧要。现阶段的人工智能还只是停留在工具层面，期待处于世界前沿领域的科学家能在此取得突破性进展。 ​​​​ </p>
+<p>5.19<br>政治的正确性大于法律的正确性。</p>
+<p>5.14<br>无知，连最基本的名词都不知道是什么意思。崇尚知识，最后却发现连什么是知识都不知道。 </p>
+<p>5.13<br>一棵大树的成长来自于种子的发芽，认识世界从相信上帝的存在开始。愿用一生来填充上帝的概念，对与错无关紧要，充实的过程至关重要。</p>
+<p>5.8<br>从地缘分布上，从欧美到东亚，世界主要教派分为基督教，伊斯兰教以及东方诸教。基督教和伊斯兰教都具有极端性，基督教在进入近代时已通过武力将主流教派思想统一，伊斯兰教却未达到统一，现在也因为正统性问题不断发生局部战争。只有东方教派因其包容性未发生大的宗教战争，不断兼容并蓄，可也导致其教众信仰不坚定。</p>
+<p>5.6<br>屁股决定脑袋，这话一点不错。多数人会天然的站在自己的位置阐释观点…</p>
+<p>4.29<br>纵观人类世界世，在一世纪前后，亚洲和欧洲相继创立儒家，道教，佛教，伊斯兰教及基督教等教派，然而，作为考古史上所论证的人类起源地—非洲却未诞生类似教派，即便存在撒哈拉大沙漠的地域阻隔，也无从解释此原因。奇哉！怪哉！ ​​​​ </p>
+<p>4.16<br>每个人都是剧中的一个演员，上帝指定好了各种角色；我们的责任就是好好的演好我们的角色，不管我们的角色是什么。</p>
+<p>4.2<br>若我能预知死亡的具体时间，我希望躺在火堆上，让我的一切随之消失。 </p>
+<p>3.30<br>不要因为一样东西死去就神话它。—–无名 ​​​​</p>
+<p>3.26<br>在日常生活中，数据挖掘的大量应用是在构建思想牢笼。当我们对某一方面感兴趣时，数据挖掘会自动屏蔽掉其他方面的内容，限制我们获取多样化的信息。随着时间的推移，我们会变得越来越狭隘。 ​​​​ </p>
+<p>3.25<br>假设上帝创造世界的目的是记录各类物种的优缺点，完善自我。那么，上帝必然期望物种是不断进化的。目前，人类是地球当之无愧的霸主，是上帝最主要的观察对象。人类应该促进种群进化，增加种族的数量，丰富种群的多样性。因此，人类最高的目的是提高人类的质量和数量。（精英主义） ​​​​ </p>
+<p>3.25<br>人类社会要不断完善主流文化，扩展非主流文化，用非主流文化的优点来修正主流文化。 ​​​​ </p>
+<p>3.22<br>时间是一个抽象的概念，是人们对客观事物的运动规律的总结，起源于变化。 </p>
+<p>3.21<br>万物都是数。—–毕达哥拉斯 ​​​​<br>水是最好的。—–泰勒斯 ​​​​<br>整个自然都在向我们呼唤：上帝存在。—伏尔泰 ​​​​ </p>
+<p>3.19<br>大多数情况下(条件约束)，若从死亡的角度来探究个人生命的意义，只会走向虚无主义。</p>
+<p>3.15<br>315，画风越来越不像是替消费者维权，而在不停地强调有关部门的成绩。<br>笛卡尔的“我思故我在”解决了“缸中之脑”的困惑。</p>
+<p>3.13<br>Across the Great Wall, we can reach every corner in the world. </p>
+<p>3.12<br>to be or not to be, it is a problem.随着阅历的增加，名言也会有不同的理解。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2017/03/09/boost/boost函数：is_permutation/" data-id="cjawd5pc7000b9owe823dfopq" class="article-share-link">Share</a>
+      <a data-url="http://www.itrayweb.com/2017/04/01/生活杂谈/零碎话语/" data-id="cjgc0cax7000cmgwe63kt3nkb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-boost/boost函数：equal mismatch" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/10/boost/boost函数：equal mismatch/" class="article-date">
+  <time datetime="2017-03-10T11:00:00.000Z" itemprop="datePublished">2017/03/10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/10/boost/boost函数：equal mismatch/">boost函数：equal mismatch</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p>std::equal</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">InputIterator1</span>, <span class="title">class</span> <span class="title">InputIterator2</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">equal</span> ( <span class="title">InputIterator1</span> <span class="title">first1</span>, <span class="title">InputIterator1</span> <span class="title">last1</span>,</span></span><br><span class="line"><span class="class">             <span class="title">InputIterator2</span> <span class="title">first2</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">InputIterator1</span>, <span class="title">class</span> <span class="title">InputIterator2</span>, <span class="title">class</span> <span class="title">BinaryPredicate</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">equal</span> ( <span class="title">InputIterator1</span> <span class="title">first1</span>, <span class="title">InputIterator1</span> <span class="title">last1</span>,</span></span><br><span class="line"><span class="class">             <span class="title">InputIterator2</span> <span class="title">first2</span>, <span class="title">BinaryPredicate</span> <span class="title">pred</span> );</span></span><br></pre></td></tr></table></figure>
+<p>boost::algorithm::equal</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">InputIterator1</span>, <span class="title">class</span> <span class="title">InputIterator2</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">equal</span> ( <span class="title">InputIterator1</span> <span class="title">first1</span>, <span class="title">InputIterator1</span> <span class="title">last1</span>,</span></span><br><span class="line"><span class="class">             <span class="title">InputIterator2</span> <span class="title">first2</span>, <span class="title">InputIterator2</span> <span class="title">last2</span> );</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">InputIterator1</span>, <span class="title">class</span> <span class="title">InputIterator2</span>, <span class="title">class</span> <span class="title">BinaryPredicate</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">equal</span> ( <span class="title">InputIterator1</span> <span class="title">first1</span>, <span class="title">InputIterator1</span> <span class="title">last1</span>,</span></span><br><span class="line"><span class="class">             <span class="title">InputIterator2</span> <span class="title">first2</span>, <span class="title">InputIterator2</span> <span class="title">last2</span>, <span class="title">BinaryPredicate</span> <span class="title">pred</span> );</span></span><br></pre></td></tr></table></figure>
+<p>简述：判断两个容器区间的元素是否相等。</p>
+<p>boost::algorithm::equal相对于std::equal的参数，需要多传入第二个容器的右区间，安全性提高。</p>
+<p>在我们使用std::equal的时候，一般也建议先判断第二个容器元素个数是否不小于第一个容器的元素个数。</p>
+<p>示例：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">auto</span> c1 = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">14</span>, <span class="number">15</span>&#125;;  </span><br><span class="line"><span class="keyword">auto</span> c2 = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;  </span><br><span class="line"></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; boost::algorithm::equal ( c1.begin (),     c1.end (),       c2.begin (), c2.end ()); <span class="comment">//  </span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; boost::algorithm::equal ( c1.begin () + <span class="number">1</span>, c1.begin () + <span class="number">4</span>, c2.begin (), c2.end ()); <span class="comment">//true  </span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; boost::algorithm::equal ( c1.end (),       c1.end (),       c2.end (),   c2.end ()); <span class="comment">//true  // empty sequences are alway equal to each other  </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;  </span><br><span class="line"></span><br><span class="line"><span class="keyword">auto</span> seq1 = &#123; <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span> &#125;;  </span><br><span class="line"><span class="keyword">auto</span> seq2 = &#123; <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;;  </span><br><span class="line"></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::equal ( seq1.begin (), seq1.end (), seq2.begin ()); <span class="comment">// true  </span></span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::equal ( seq2.begin (), seq2.end (), seq1.begin ()); <span class="comment">// vs return false  </span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::equal ( seq1.begin (), seq1.end (), seq2.begin (), seq2.end ()); <span class="comment">// false  </span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
+<p>std::mismatch与boost::algorithm::mismatch参数接口类似，增加了对第二个容器范围的限定。</p>
+<p>简述：判断两个容器的元素不同的起始位置。</p>
+<p>示例：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">auto</span> c1 = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">14</span>, <span class="number">15</span>&#125;;  </span><br><span class="line"><span class="keyword">auto</span> c2 = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;  </span><br><span class="line"></span><br><span class="line"><span class="keyword">auto</span> result = boost::algorithm::mismatch ( c1.begin (), c1.end (), c2.begin (), c2.end ());  </span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; *(result.first) &lt;&lt; <span class="string">"\t"</span> &lt;&lt; *(result.second) &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 0 1  </span></span><br><span class="line">result = boost::algorithm::mismatch ( c1.begin () + <span class="number">1</span>, c1.begin () + <span class="number">4</span>, c2.begin (), c2.end ());  </span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; *(result.first) &lt;&lt; <span class="string">"\t"</span> &lt;&lt; *(result.second) &lt;&lt; <span class="built_in">endl</span>; <span class="comment">// 14 16119860  </span></span><br><span class="line">result = boost::algorithm::mismatch ( c1.end (), c1.end (), c2.end (), c2.end ());  </span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; *(result.first) &lt;&lt; <span class="string">"\t"</span> &lt;&lt; *(result.second) &lt;&lt; <span class="built_in">endl</span>; <span class="comment">//266392705 16119860  </span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;  </span><br><span class="line"></span><br><span class="line"><span class="keyword">auto</span> seq1 = &#123; <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span> &#125;;  </span><br><span class="line"><span class="keyword">auto</span> seq2 = &#123; <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;;  </span><br><span class="line"></span><br><span class="line">result = <span class="built_in">std</span>::mismatch ( seq1.begin (), seq1.end (), seq2.begin ()); <span class="comment">//vs  </span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; *(result.first) &lt;&lt; <span class="string">"\t"</span> &lt;&lt; *(result.second) &lt;&lt; <span class="built_in">endl</span>; <span class="comment">//1 3  </span></span><br><span class="line">result = <span class="built_in">std</span>::mismatch ( seq2.begin (), seq2.end (), seq1.begin ()); <span class="comment">//vs  </span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; *(result.first) &lt;&lt; <span class="string">"\t"</span> &lt;&lt; *(result.second) &lt;&lt; <span class="built_in">endl</span>; <span class="comment">//3 1  </span></span><br><span class="line">result = <span class="built_in">std</span>::mismatch ( seq1.begin (), seq1.end (), seq2.begin (), seq2.end ()); <span class="comment">//vs  </span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; *(result.first) &lt;&lt; <span class="string">"\t"</span> &lt;&lt; *(result.second) &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//1 3  </span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2017/03/10/boost/boost函数：equal mismatch/" data-id="cjawfl4sf00060kweppplgfnc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boost/">boost</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-boost/boost函数：clamp gather hex is_palindrome" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/10/boost/boost函数：clamp gather hex is_palindrome/" class="article-date">
+  <time datetime="2017-03-10T11:00:00.000Z" itemprop="datePublished">2017/03/10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/10/boost/boost函数：clamp gather hex is_palindrome/">boost函数：clamp gather hex is_palindrome</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p>clamp:<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Pred&gt;   </span><br><span class="line">  <span class="function">T <span class="keyword">const</span> &amp; <span class="title">clamp</span> <span class="params">( T <span class="keyword">const</span>&amp; val,   </span></span></span><br><span class="line"><span class="function"><span class="params">    <span class="keyword">typename</span> boost::mpl::identity&lt;T&gt;::type <span class="keyword">const</span> &amp; lo,   </span></span></span><br><span class="line"><span class="function"><span class="params">    <span class="keyword">typename</span> boost::mpl::identity&lt;T&gt;::type <span class="keyword">const</span> &amp; hi, Pred p )</span>  </span></span><br><span class="line"><span class="function">  </span>&#123;  </span><br><span class="line"><span class="comment">//    assert ( !p ( hi, lo ));    // Can't assert p ( lo, hi ) b/c they might be equal  </span></span><br><span class="line">    <span class="keyword">return</span> p ( val, lo ) ? lo : p ( hi, val ) ? hi : val;  </span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+<p>简述：给定三个数，返回中间数（Pred默认使用std::less)。</p>
+<p>示例：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> foo = <span class="number">23</span>;  </span><br><span class="line">foo = boost::algorithm::clamp(foo, <span class="number">1</span>, <span class="number">10</span>);  </span><br><span class="line"></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; foo &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
+<p>gather:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;  </span><br><span class="line">    <span class="keyword">typename</span> BidirectionalIterator,  <span class="comment">// Iter models BidirectionalIterator  </span></span><br><span class="line">    <span class="keyword">typename</span> Pred&gt;                   <span class="comment">// Pred models UnaryPredicate  </span></span><br><span class="line"><span class="built_in">std</span>::pair&lt;BidirectionalIterator, BidirectionalIterator&gt; gather   </span><br><span class="line">        ( BidirectionalIterator first, BidirectionalIterator last, BidirectionalIterator pivot, Pred pred )  </span><br><span class="line">&#123;  </span><br><span class="line"><span class="comment">//  The first call partitions everything up to (but not including) the pivot element,  </span></span><br><span class="line"><span class="comment">//  while the second call partitions the rest of the sequence.  </span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">std</span>::make_pair (  </span><br><span class="line">        <span class="built_in">std</span>::stable_partition ( first, pivot, !boost::bind&lt;<span class="keyword">bool</span>&gt; ( pred, _1 )),  </span><br><span class="line">        <span class="built_in">std</span>::stable_partition ( pivot, last,   boost::bind&lt;<span class="keyword">bool</span>&gt; ( pred, _1 )));  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>简述：将容器中满足pred函数要求的元素聚集到pivot的两边，并返回满足元素的区间迭代器。</p>
+<p>stable_partition函数作用是依据pred函数将容器分为两部分(前一部分满足函数要求，后一部分不满足函数要求),且元素的相对位置不发生变化。</p>
+<p>示例：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">int</span> arr[] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>&#125;;  </span><br><span class="line"></span><br><span class="line"><span class="keyword">auto</span> range = boost::algorithm::gather(arr, arr + <span class="number">10</span>, arr + <span class="number">4</span>, isEven);  </span><br><span class="line"></span><br><span class="line"><span class="comment">//1 3 0 2 4 6 8 5 7 9  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(arr) / <span class="keyword">sizeof</span>(<span class="keyword">int</span>); ++i)  </span><br><span class="line">&#123;  </span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; *(arr + i) &lt;&lt; <span class="string">" "</span>;  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;  </span><br><span class="line"></span><br><span class="line"><span class="comment">//0 2 4 6 8  </span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> ite = range.first; ite != range.second; ++ite)  </span><br><span class="line">&#123;  </span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; *ite &lt;&lt; <span class="string">" "</span>;  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure></p>
+<p>hex:</p>
+<p>is_palindrome:</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2017/03/10/boost/boost函数：clamp gather hex is_palindrome/" data-id="cjawfl4sg00070kwezulzz519" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boost/">boost</a></li></ul>
@@ -147,7 +316,140 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2017/03/09/boost/boost函数：is_partitioned/" data-id="cjawd5pc500089owe7bqst8su" class="article-share-link">Share</a>
+      <a data-url="http://www.itrayweb.com/2017/03/09/boost/boost函数：is_partitioned/" data-id="cjawfl4sn000b0kweive4w9ba" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boost/">boost</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-boost/boost函数：partition_point" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/09/boost/boost函数：partition_point/" class="article-date">
+  <time datetime="2017-03-09T11:00:00.000Z" itemprop="datePublished">2017/03/09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/09/boost/boost函数：partition_point/">boost函数：partition_point</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIterator, <span class="keyword">typename</span> Predicate&gt;</span><br><span class="line"><span class="function">ForwardIterator <span class="title">partition_point</span> <span class="params">( ForwardIterator first, ForwardIterator last, Predicate p )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="keyword">size_t</span> dist = <span class="built_in">std</span>::distance ( first, last );</span><br><span class="line">    <span class="keyword">while</span> ( first != last ) &#123;</span><br><span class="line">        <span class="built_in">std</span>::<span class="keyword">size_t</span> d2 = dist / <span class="number">2</span>;</span><br><span class="line">        ForwardIterator ret_val = first;</span><br><span class="line">        <span class="built_in">std</span>::advance (ret_val, d2);</span><br><span class="line">        <span class="keyword">if</span> (p (*ret_val)) &#123;</span><br><span class="line">            first = ++ret_val;</span><br><span class="line">            dist -= d2 + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            last = ret_val;</span><br><span class="line">            dist = d2;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> first;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>简介：二分法检测一组序列(针对当前的判断条件是有序的)中第一个不满足条件要求的元素</p>
+<p>示例：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">lessThan10</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;<span class="keyword">return</span> i &lt; <span class="number">10</span>;&#125;      </span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> myints_1[] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">14</span>, <span class="number">15</span>, <span class="number">1</span>&#125;;  </span><br><span class="line"></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; c1(myints_1, myints_1 + <span class="keyword">sizeof</span>(myints_1) / <span class="keyword">sizeof</span>(<span class="keyword">int</span>));  </span><br><span class="line"></span><br><span class="line">boost::algorithm::partition_point(c1, lessThan10);  <span class="comment">//14的迭代器</span></span><br></pre></td></tr></table></figure>
+<p>此函数功能的用途暂时无法清楚知道，可以与is_partitioned函数做对比。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2017/03/09/boost/boost函数：partition_point/" data-id="cjawfl4so000c0kwesbr3qne6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boost/">boost</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-boost/boost的函数：is_sorted is_sorted_until is_increasing(decreasing) is_strictly_increasing(decreasing)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/09/boost/boost的函数：is_sorted is_sorted_until is_increasing(decreasing) is_strictly_increasing(decreasing)/" class="article-date">
+  <time datetime="2017-03-09T11:00:00.000Z" itemprop="datePublished">2017/03/09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/09/boost/boost的函数：is_sorted is_sorted_until is_increasing(decreasing) is_strictly_increasing(decreasing)/">boost的函数：is_sorted is_sorted_until is_increasing(decreasing) is_strictly_increasing(decreasing)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文件的最底层实现为is_sorted_until函数，其他函数都是通过间接调用此函数实现函数功能。</p>
+        
+          <p class="article-more-link">
+            <a href="/2017/03/09/boost/boost的函数：is_sorted is_sorted_until is_increasing(decreasing) is_strictly_increasing(decreasing)/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2017/03/09/boost/boost的函数：is_sorted is_sorted_until is_increasing(decreasing) is_strictly_increasing(decreasing)/" data-id="cjawfl4sr000g0kwehtyr8gsj" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boost/">boost</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-boost/boost函数：is_permutation" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/09/boost/boost函数：is_permutation/" class="article-date">
+  <time datetime="2017-03-09T11:00:00.000Z" itemprop="datePublished">2017/03/09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/09/boost/boost函数：is_permutation/">boost函数：is_permutation</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt; <span class="class"><span class="keyword">class</span> <span class="title">ForwardIterator1</span>, <span class="title">class</span> <span class="title">ForwardIterator2</span> &gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">is_permutation</span> ( <span class="title">ForwardIterator1</span> <span class="title">first1</span>, <span class="title">ForwardIterator1</span> <span class="title">last1</span>, <span class="title">ForwardIterator2</span> <span class="title">first2</span> );</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt; <span class="class"><span class="keyword">class</span> <span class="title">ForwardIterator1</span>, <span class="title">class</span> <span class="title">ForwardIterator2</span>, <span class="title">class</span> <span class="title">BinaryPredicate</span> &gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">is_permutation</span> ( <span class="title">ForwardIterator1</span> <span class="title">first1</span>, <span class="title">ForwardIterator1</span> <span class="title">last1</span>,</span></span><br><span class="line"><span class="class">                      <span class="title">ForwardIterator2</span> <span class="title">first2</span>, <span class="title">BinaryPredicate</span> <span class="title">p</span> );</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt; <span class="class"><span class="keyword">class</span> <span class="title">ForwardIterator1</span>, <span class="title">class</span> <span class="title">ForwardIterator2</span> &gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">is_permutation</span> ( <span class="title">ForwardIterator1</span> <span class="title">first1</span>, <span class="title">ForwardIterator1</span> <span class="title">last1</span>, <span class="title">ForwardIterator2</span> <span class="title">first2</span>, <span class="title">ForwardIterator2</span> <span class="title">last2</span> );</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range, <span class="keyword">typename</span> ForwardIterator&gt;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_permutation</span> <span class="params">( <span class="keyword">const</span> Range &amp;r, ForwardIterator first2 )</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range, <span class="keyword">typename</span> ForwardIterator, <span class="keyword">typename</span> BinaryPredicate&gt;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_permutation</span> <span class="params">( <span class="keyword">const</span> Range &amp;r, ForwardIterator first2, BinaryPredicate pred )</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt; <span class="class"><span class="keyword">class</span> <span class="title">ForwardIterator1</span>, <span class="title">class</span> <span class="title">ForwardIterator2</span>, <span class="title">class</span> <span class="title">BinaryPredicate</span> &gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">is_permutation</span> ( <span class="title">ForwardIterator1</span> <span class="title">first1</span>, <span class="title">ForwardIterator1</span> <span class="title">last1</span>,</span></span><br><span class="line"><span class="class">                      <span class="title">ForwardIterator2</span> <span class="title">first2</span>, <span class="title">ForwardIterator2</span> <span class="title">last2</span>,</span></span><br><span class="line"><span class="class">                      <span class="title">BinaryPredicate</span> <span class="title">p</span> );</span></span><br></pre></td></tr></table></figure>
+<p>简介：比较两个容器区间的元素是否一致(不是相等)。</p>
+<p>示例：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">int</span> myints_1[] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">14</span>, <span class="number">15</span>&#125;;</span><br><span class="line">    <span class="keyword">int</span> myints_2[] = &#123;<span class="number">15</span>, <span class="number">14</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; c1(myints_1, myints_1 + <span class="keyword">sizeof</span>(myints_1) / <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; c2(myints_2, myints_2 + <span class="keyword">sizeof</span>(myints_2) / <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line"></span><br><span class="line">    boost::algorithm::is_permutation ( c1.begin(),     c1.end (), c2.begin()); <span class="comment">//false</span></span><br><span class="line">    boost::algorithm::is_permutation ( c1.begin() + <span class="number">1</span>, c1.end (), c2.begin()); <span class="comment">//true</span></span><br><span class="line"></span><br><span class="line">    boost::algorithm::is_permutation ( c1.end (), c1.end (), c2.end()); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+<p>注意：</p>
+<p>下列函数的头文件在boost\algorithm\cxx14</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt; <span class="class"><span class="keyword">class</span> <span class="title">ForwardIterator1</span>, <span class="title">class</span> <span class="title">ForwardIterator2</span>, <span class="title">class</span> <span class="title">BinaryPredicate</span> &gt;</span></span><br><span class="line"><span class="class"><span class="title">bool</span> <span class="title">is_permutation</span> ( <span class="title">ForwardIterator1</span> <span class="title">first1</span>, <span class="title">ForwardIterator1</span> <span class="title">last1</span>,</span></span><br><span class="line"><span class="class">                      <span class="title">ForwardIterator2</span> <span class="title">first2</span>, <span class="title">ForwardIterator2</span> <span class="title">last2</span>,</span></span><br><span class="line"><span class="class">                      <span class="title">BinaryPredicate</span> <span class="title">p</span> );</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2017/03/09/boost/boost函数：is_permutation/" data-id="cjawfl4sj00080kwev5b58jcl" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boost/">boost</a></li></ul>
@@ -190,7 +492,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2017/03/08/boost/boost的函数：all_of all_of_equal any_of any_of_equal none_of none_of_equal one_of one_of_equal/" data-id="cjawd5pcb000f9owel7no6vo6" class="article-share-link">Share</a>
+      <a data-url="http://www.itrayweb.com/2017/03/08/boost/boost的函数：all_of all_of_equal any_of any_of_equal none_of none_of_equal one_of one_of_equal/" data-id="cjawfl4sq000f0kweh3jeh4np" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boost/">boost</a></li></ul>
@@ -202,10 +504,10 @@
 
 
   
-    <article id="post-生活杂谈/塔罗卡牌：愚人" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-生活杂谈/读书笔记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/08/15/生活杂谈/塔罗卡牌：愚人/" class="article-date">
-  <time datetime="2016-08-15T11:00:00.000Z" itemprop="datePublished">2016/08/15</time>
+    <a href="/2016/08/23/生活杂谈/读书笔记/" class="article-date">
+  <time datetime="2016-08-23T11:00:00.000Z" itemprop="datePublished">2016/08/23</time>
 </a>
     
   </div>
@@ -216,50 +518,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/15/生活杂谈/塔罗卡牌：愚人/">塔罗卡牌：愚人</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>作为第一张卡牌,从0开始,揭示人从无到有必然需要迈出第一步.</p>
-        
-          <p class="article-more-link">
-            <a href="/2016/08/15/生活杂谈/塔罗卡牌：愚人/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2016/08/15/生活杂谈/塔罗卡牌：愚人/" data-id="cjawd5pcj000s9owesxl4xt8z" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-算法/最小二乘法" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/14/算法/最小二乘法/" class="article-date">
-  <time datetime="2016-08-14T13:00:22.000Z" itemprop="datePublished">2016/08/14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/14/算法/最小二乘法/">最小二乘法</a>
+      <a class="article-title" href="/2016/08/23/生活杂谈/读书笔记/">读书笔记</a>
     </h1>
   
 
@@ -268,271 +527,146 @@
     <div class="article-entry" itemprop="articleBody">
       
         <a id="more"></a>
-<p>1.原理：</p>
-<p>2.代码：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LeastSquare</span>&#123;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">double</span> a, b;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"></span><br><span class="line">    LeastSquare(<span class="keyword">const</span> <span class="built_in">vector</span>&lt;<span class="keyword">double</span>&gt;&amp; x, <span class="keyword">const</span> <span class="built_in">vector</span>&lt;<span class="keyword">double</span>&gt;&amp; y)</span><br><span class="line"></span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">double</span> t1=<span class="number">0</span>, t2=<span class="number">0</span>, t3=<span class="number">0</span>, t4=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;x.size(); ++i)</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line"></span><br><span class="line">            t1 += x[i]*x[i];</span><br><span class="line"></span><br><span class="line">            t2 += x[i];</span><br><span class="line"></span><br><span class="line">            t3 += x[i]*y[i];</span><br><span class="line"></span><br><span class="line">            t4 += y[i];</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        a = (t3*x.size() - t2*t4) / (t1*x.size() - t2*t2);</span><br><span class="line"></span><br><span class="line">        b = (t1*t4 - t2*t3) / (t1*x.size() - t2*t2);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">double</span> <span class="title">getY</span><span class="params">(<span class="keyword">const</span> <span class="keyword">double</span> x)</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> a*x + b;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt;<span class="string">"y = "</span>&lt;&lt;a&lt;&lt;<span class="string">"x + "</span>&lt;&lt;b&lt;&lt;<span class="string">"\n"</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>3.注意事项：</p>
-<p>x,y的值很大时，会造成t1,t3的值越界.</p>
-
+<p>目送 (龙应台) 2016/8/23</p>
+<p>家的细腻描述,从细微处得见作者真挚的情感。</p>
+<p>作为被人呵护的儿女时，父母在的地方，就是家。早上赶车时，有人催你喝热腾腾的豆浆。天若下雨，他坚持你要带伞。烫的便当塞在书包里，书包拎在肩上，贴身还热。周末上街时，一家四五口人可以挤在一辆机车上招摇过市。放学回来时，距离门外几尺就听见锅铲轻快的声音，饭菜香一阵一阵。晚了，一顶大</p>
+<p>大德如山高，王恩似海深</p>
+<p>在这里，他可以孤单却不孤独，他既是独处，又是热闹；热闹中独处，仿佛行走深渊之上却有了栏杆扶手</p>
+<p>一个重量级选手</p>
+<p>从屋子这一头走到那一头，我感觉到他的体重</p>
+<p>孩子真是搞笑派</p>
+<p>蹄声轻俏，想必是体型较小的狗── “可是，”安德烈说， “会不会是一只体型较大的老鼠呢？</p>
+<p>相当理智</p>
+<h1 id="这个袋子，我永远放在门边，里头有护照、出生证明、结婚证书、博士证书，还有一百美金。"><a href="#这个袋子，我永远放在门边，里头有护照、出生证明、结婚证书、博士证书，还有一百美金。" class="headerlink" title="这个袋子，我永远放在门边，里头有护照、出生证明、结婚证书、博士证书，还有一百美金。"></a>这个袋子，我永远放在门边，里头有护照、出生证明、结婚证书、博士证书，还有一百美金。</h1><p>欢乐颂 2016/9/27</p>
+<p>达摩克利斯之剑。</p>
+<h1 id="在那些没有信心靠自己的奋斗找到前途的人们当中，很难找到独立的精神和坚强的个性。"><a href="#在那些没有信心靠自己的奋斗找到前途的人们当中，很难找到独立的精神和坚强的个性。" class="headerlink" title="在那些没有信心靠自己的奋斗找到前途的人们当中，很难找到独立的精神和坚强的个性。"></a>在那些没有信心靠自己的奋斗找到前途的人们当中，很难找到独立的精神和坚强的个性。</h1><p>从你的全世界路过 (张嘉佳)  2016/10/5</p>
+<p>这世界上有很多东西，细小而琐碎，却在你不经意的地方，支撑你度过很多道坎。</p>
+<p>想着想着笑了起来，被老师用粉笔头扔到脑门。</p>
+<p>总有一段路，你是会一边哭一边走完的。</p>
+<p>手一抖，整坨盐掉到锅里，结果狗都咽不下去。</p>
+<p>有个姑娘，是黑暗料理界的霸主。她做的菜，千篇一律焦黑焦黑的，</p>
+<p>分母那么浩瀚，分子那么微弱。唯一就等于没有。</p>
+<p>养于娘胎带进棺材的孩子气。</p>
+<p>主要任务是加油叫好。</p>
+<p>大问题往往让人同仇敌忾，反而不易分开，小事件才像玻璃上的缝隙，一旦布满，会粉身碎骨的。”</p>
+<p>思念是一场长途奔袭。记忆做路牌，越贪心走得越远，可是会找不到回来的路，然后把自己弄丢。</p>
+<p>努力就可以成功，相爱就可以在一起，这是世界上两个最大的谎言，支撑着我们年少时跌跌撞撞。</p>
+<p>一个女孩子在大家面前哭成这样，她该多难过。 一个女孩子在大家面前哭成这样，还在吃饭，她该多饿。</p>
+<h1 id="一个渺小的傻逼，背后升起巨大的鸽子。"><a href="#一个渺小的傻逼，背后升起巨大的鸽子。" class="headerlink" title="一个渺小的傻逼，背后升起巨大的鸽子。"></a>一个渺小的傻逼，背后升起巨大的鸽子。</h1><p>白夜行 (新经典文库•东野圭吾作品) (东野圭吾 (Higashino Keigo)) 2016/10/27</p>
+<p>不小心把商品放进自己纸袋的客人</p>
+<p>“捡别人丢的东西不还，跟偷别人随意放置的东西，并没有什么差别。有错的难道不是把装了钱的包随便放的人吗？这个社会上，让别人有机可乘的人注定要吃亏。”</p>
+<p>“我的人生就像在白夜里走路。”</p>
+<h1 id="虾虎鱼一定会待在枪虾身边。”"><a href="#虾虎鱼一定会待在枪虾身边。”" class="headerlink" title="虾虎鱼一定会待在枪虾身边。”"></a>虾虎鱼一定会待在枪虾身边。”</h1><p>活着 (余华作品) (余华) 2016/10/10</p>
+<p>我们都是这个世界上的迷路者，我们都是按照自己认定的道路寻找方向，也许我们是对的，也许我们错了，或者有时候对了，有时候错了。</p>
+<p>生活是属于每个人自己的感受，不属于任何别人的看法。</p>
+<p>这种事指XXOO,庄稼的成长可以跟其划等号?难道说是一样勤劳的意思!</p>
+<p>这样的事我屡见不鲜，差不多和我听到的歌谣一样多，当我望着到处都充满绿色的土地时，我就会进一步明白庄稼为何长得如此旺盛。</p>
+<p>这个嫖和赌，就像是胳膊和肩膀连在一起，怎么都分不开。</p>
+<p>“我全身都是越来越硬，只有一个地方越来越软。”</p>
+<p>“做人不能忘记四条，话不要说错，床不要睡错，门槛不要踏错，口袋不要摸错。”</p>
+<p>枕巾上印着：千万不要忘记阶级斗争；床单上的字是：在大风大浪中前进。</p>
+<p>每天都睡在毛主席的话上面。</p>
+<p>四周的人离开后的田野，呈现了舒展的姿态，看上去是那么的广阔，无边无际，在夕阳之中如同水一样泛出片片光芒。</p>
+<p>少年去游荡，中年想掘藏，老年做和尚。</p>
+<h1 id="我看到广阔的土地袒露着结实的胸膛，那是召唤的姿态，就像女人召唤着她们的儿女，土地召唤着黑夜来临。”《"><a href="#我看到广阔的土地袒露着结实的胸膛，那是召唤的姿态，就像女人召唤着她们的儿女，土地召唤着黑夜来临。”《" class="headerlink" title="我看到广阔的土地袒露着结实的胸膛，那是召唤的姿态，就像女人召唤着她们的儿女，土地召唤着黑夜来临。”《"></a>我看到广阔的土地袒露着结实的胸膛，那是召唤的姿态，就像女人召唤着她们的儿女，土地召唤着黑夜来临。”《</h1><p>中国少了一味药 (慕容雪村) 2016/10/13</p>
+<p>缺乏常识，没有起码的辨别能力；急功近利，除了钱什么都不在乎；他们无知、轻信、狂热、固执，只盯着不切实际的目标，却看不见近在眉睫的事实。</p>
+<p>电视、报纸连篇累牍地报道，人们听多了，见惯了，就把它当成一只烂苹果，既不问它为什么腐烂，也不在乎它烂到什么程度，轻挥手就把它丢到脚下，任它在那里彻底烂透。</p>
+<p>如果把这时代的道德比喻成一个满身流血的病汉，传销者干的就是往他身上一把一把地洒盐。</p>
+<p>金字塔诈骗计划</p>
+<p>这世上能发光的不仅是太阳，污水里冒出的肥皂泡也会偶尔泛出微光。</p>
+<p>五十年后，有一种社会之病久治不愈，原因也是少了一味药，这味药就是常识。</p>
+<p>十八世纪时，托玛斯潘恩写过一本小册子，名字就叫《常识》</p>
+<p>让常识在阳光下行走，让贫弱者从苦难中脱身，让邪恶远离每一颗善良的心。</p>
+<p>生则一哭，死则一笑。</p>
+<p>世间无我，不值一哭；世间有我，不值一笑</p>
+<p>原来谎言真有无穷的魔力，只要坚持说谎，天天讲、月月讲、年年讲，再坚强的人也会动摇，再荒谬的事也会变成真理，不仅能骗倒别人，连自己都会信以为真。</p>
+<p>眉开眼笑，手舞之，足蹈之，一副乐不可支的模样</p>
+<p>人生最大的痛苦莫过于梦醒之后无路可走。</p>
+<p>国家有三重含义：领土意义上的国家，是为Country；文化、民族意义上的国家，是为Nation；还有一个指的是政府，是为State。</p>
+<p>不会思考是可耻的，而更可耻的是，这群不会思考的人正在教我如何思考。</p>
+<p>一切问题的关键在于承认一加一等于二。不承认一加一等于二，则什么事都可能发生。</p>
+<p>任何人只要坐在柜台后就是老板，站在讲台上就是老师。</p>
+<p>上有春风化雨好政策，中有组织上无微不至的关怀，下有事业伙伴的鼎力扶持，</p>
+<p>如果有人极力拉拢你，却又要求你别想太多，甚至要求你放弃思考，那么他一定是想骗你。</p>
+<p>他控制一切，可从来没人见过他。</p>
+<p>人有免于愚昧无知的自由。</p>
+<h1 id="每个人都可能爱上奴役自己的人，只要他稍微表现出一点善意，跪着的人就会感激涕零。"><a href="#每个人都可能爱上奴役自己的人，只要他稍微表现出一点善意，跪着的人就会感激涕零。" class="headerlink" title="每个人都可能爱上奴役自己的人，只要他稍微表现出一点善意，跪着的人就会感激涕零。"></a>每个人都可能爱上奴役自己的人，只要他稍微表现出一点善意，跪着的人就会感激涕零。</h1><p>偷影子的人 (马克·李维全集 1) (马克·李维) 2016/10/13</p>
+<p>为何爸妈在我早读六个月这件事上这么执著：因为我没有其他可以让他们为儿子骄傲的地方啊！</p>
+<p>历史课时，亨利太太讲述法老王图唐卡门死亡的情景，一副他死时她正好在他身边的样子，</p>
+<p>只属于孩子的阿Q精神</p>
+<p>我偷偷移了一下位置，让我的影子叠在他的上面。马格什么都没察觉，我则因这小小的诡计得逞而愉悦；终于这一次是我占上风，做做梦又没损失。</p>
+<p>她让我们选择要吃巧克力面包或吃咖啡口味的闪电面包。我们还来不及选好，她就决定让我们两种都吃。</p>
+<p>大人总是有权利做很多小孩不能做的事。</p>
+<p>当你真心跟他们说正经事时，大人从来不会相信。</p>
+<p>他爷爷现在可以安静地睡午觉而不被打扰了，墓园真的很安静。</p>
+<p>人一旦开始撒了一个谎，就再也不知道如何停止。</p>
+<p>一段美丽的邂逅，有时是时间的问题，两个人得在对的时间遇到对方。”</p>
+<p>像两个呆子般在操场的七叶树下喁喁私语，</p>
+<p>永远不要把人拿来比较，每个人都与众不同，重要的是要找到最适合自己的差异性。</p>
+<p>生命中某些珍贵的片刻，其实都来自于一些微不足道的小事。</p>
+<p>她添了皱纹，但眼中闪耀着永不老去的温柔。父母到了某个年纪总会变老，但他们的容颜会深深烙印在你的脑海里，只要闭上眼睛，想着他们，就能浮现出他们昔日的脸庞，仿佛我们对他们的爱，能让时光停顿。</p>
+<p>医生不是一门职业，而是一份使命与天职。</p>
+<p>成长中的子女出于一种近乎纯然的私心，对父母总是不太热络。</p>
+<p>大城市让人抓狂，它榨干你的灵魂，又像吐口香糖般把它吐出来。</p>
+<p>青少年时期，我们总梦想着离开父母的一天，而改天，却换成父母离开我们了。</p>
+<h1 id="人一旦开始说谎，就很难不继续下去。"><a href="#人一旦开始说谎，就很难不继续下去。" class="headerlink" title="人一旦开始说谎，就很难不继续下去。"></a>人一旦开始说谎，就很难不继续下去。</h1><p>天堂向左，深圳向右 (慕容雪村文集·2011年全新修订本) (慕容雪村) 2016/10/15</p>
+<p>你有钱，可以为钱自豪；没有钱但有未来，可以为未来自豪；又没钱又没未来，只能假装自豪。</p>
+<p>我可以请你吃饭，但不能借给你钱，因为我不知道以后还能不能看到你。千万别求我给你找工作，我的工作都是自己找的。是的，你是我的朋友，所以你可以在我这儿住几天。</p>
+<p>地球工程师 农民</p>
+<p>修理地球；</p>
+<p>世界上有两种公司，一种是你痛恨的，一种是你不满意的。</p>
+<p>有成功作证，所有的污点都成为美德，所有的谎言都成为颠扑不破的真理。</p>
+<p>理直气壮地撒谎，小心谨慎地行骗，死之前不要说实话。</p>
+<p>连开除我的制度，都是我一手制定的！</p>
+<p>男人赞美一位女士的气质，就等于否定她的容貌，</p>
+<h1 id="生命不过是一场虚无的华宴，觥筹交错，歌哭无休，然而任何人的缺席都不会改变什么。"><a href="#生命不过是一场虚无的华宴，觥筹交错，歌哭无休，然而任何人的缺席都不会改变什么。" class="headerlink" title="生命不过是一场虚无的华宴，觥筹交错，歌哭无休，然而任何人的缺席都不会改变什么。"></a>生命不过是一场虚无的华宴，觥筹交错，歌哭无休，然而任何人的缺席都不会改变什么。</h1><p>美国学生世界历史（英汉双语版）(上下册） (西方原版教材之文史经典) (维吉尔•Ｍ•希利尔) 2016/10/16</p>
+<h1 id="No-world-at-all-Only-the-stars-and-God-who-made-the-stars"><a href="#No-world-at-all-Only-the-stars-and-God-who-made-the-stars" class="headerlink" title="No world at all! Only the stars, and God, who made the stars."></a>No world at all! Only the stars, and God, who made the stars.</h1><p>财务报表阅读与信贷分析实务 (财务知识轻松学) (崔宏) 2016/10/18</p>
+<p>巴塞尔协议</p>
+<p>信用风险可以定义为受信方拒绝或无力按时、全额支付所欠债务时，给信用提供方带来的潜在损失。</p>
+<h1 id="贷前科学评价企业的还款能力和意愿，争取客户但不忘充分揭示和预警风险；贷中做到独立评审，科学规划风险管控措施，正确做出信贷决策；贷后及时发现企业问题，确保资产安全。"><a href="#贷前科学评价企业的还款能力和意愿，争取客户但不忘充分揭示和预警风险；贷中做到独立评审，科学规划风险管控措施，正确做出信贷决策；贷后及时发现企业问题，确保资产安全。" class="headerlink" title="贷前科学评价企业的还款能力和意愿，争取客户但不忘充分揭示和预警风险；贷中做到独立评审，科学规划风险管控措施，正确做出信贷决策；贷后及时发现企业问题，确保资产安全。"></a>贷前科学评价企业的还款能力和意愿，争取客户但不忘充分揭示和预警风险；贷中做到独立评审，科学规划风险管控措施，正确做出信贷决策；贷后及时发现企业问题，确保资产安全。</h1><p>余罪：我的刑侦笔记 (常书欣) 2016/10/20</p>
+<p>你是相信兄弟我，还是相信组织呢？”</p>
+<p>“得，都不怎么信得过。”</p>
+<p>非常对不起大家，我这个长相让大家失望</p>
+<p>碌碌无为，尸位素餐，</p>
+<p>我的事你不能管，你的事，我能管。</p>
+<p>马斯洛需求层次论，</p>
+<h1 id="“有信仰才会有人生的目标和归属感，我觉得信仰之于精神，就像氧气之于人体一样，可以忽视它的存在，但你无法否认，它是不可或缺的部分。”"><a href="#“有信仰才会有人生的目标和归属感，我觉得信仰之于精神，就像氧气之于人体一样，可以忽视它的存在，但你无法否认，它是不可或缺的部分。”" class="headerlink" title="“有信仰才会有人生的目标和归属感，我觉得信仰之于精神，就像氧气之于人体一样，可以忽视它的存在，但你无法否认，它是不可或缺的部分。”"></a>“有信仰才会有人生的目标和归属感，我觉得信仰之于精神，就像氧气之于人体一样，可以忽视它的存在，但你无法否认，它是不可或缺的部分。”</h1><p>财务报表阅读与信贷分析实务 (财务知识轻松学) (崔宏) 2016/10/24</p>
+<p>信贷财务分析必须围绕企业的盈利质量、资产质量和现金流量三者的相互关系而展开，最终形成以企业流动性和盈利能力为依托的关于企业承债能力的综合判断上。</p>
+<p>短期内关注流动性，长期更关注盈利能力，而杠杆比率则是基础性一个评价指标。</p>
+<p>人民银行信贷登记系统</p>
+<p>财务分析的目的在于了解过去、评价现状、预测未来，</p>
+<p>经营环境和经营战略</p>
+<p>经营环境包括企业所处的行业、要素市场、政策法规管制等；经营战略则决定了企业如何在经营环境中获得竞争优势。</p>
+<p>在企业的创业阶段，重点分析收入增长和自由现金流量及各项非财务指标；成长阶段则应重点分析收入增长、资产结构和财务弹性等指标；成熟阶段则需要重点分析资产收益率、收入成本比、现金流量等指标；衰退阶段则分析的重点主要集中在现金流量上。</p>
+<p>所谓框架，指的是人们用来阐释外在客观世界的心理模式；</p>
+<p>“战略分析→会计分析→财务分析→前景分析”。</p>
+<p>资产创造收益（资产负债表），收益形成盈利（利润表），盈利形成现金（现金流量表），现金归还贷款”。</p>
+<h1 id="资产质量、盈利质量、现金流是财务报表自身分析的三大逻辑切入点。"><a href="#资产质量、盈利质量、现金流是财务报表自身分析的三大逻辑切入点。" class="headerlink" title="资产质量、盈利质量、现金流是财务报表自身分析的三大逻辑切入点。"></a>资产质量、盈利质量、现金流是财务报表自身分析的三大逻辑切入点。</h1><p>死亡通知单：暗黑者 (周浩晖) 2016/10/25</p>
+<p>他经常会遇到这样的家长，自己徒劳奔波了半生却无所成就，只能把所有的希望都寄托在下一辈的身上，可是连自己的人生都把握不好，又怎么去把握其他人的呢？所以他们在家庭教育方面往往也是失败者。</p>
+<p>在无法应对别人的言辞时，反问往往是最好的转守为攻的方式。</p>
+<p>当一个人做了“坏”事，并不代表他一定是个“坏”人，他做“坏”事的原因也许很简单。</p>
+<h1 id="每个人都有着各自的秘密，每个人都在自己的道路上作出了选择，他们毫无例外都在选择对自己最有利的前进方向。"><a href="#每个人都有着各自的秘密，每个人都在自己的道路上作出了选择，他们毫无例外都在选择对自己最有利的前进方向。" class="headerlink" title="每个人都有着各自的秘密，每个人都在自己的道路上作出了选择，他们毫无例外都在选择对自己最有利的前进方向。"></a>每个人都有着各自的秘密，每个人都在自己的道路上作出了选择，他们毫无例外都在选择对自己最有利的前进方向。</h1><p>死亡通知单之离别曲(上) (周浩晖) 2016/10/29</p>
+<p>“不要在任何时候因为别人的劝说而改变自己既定的计划。”</p>
+<p>“不管受了多大的苦，不管未来多么绝望，我们都要继续活着。”</p>
+<h1 id="活下去，为了关心我们的人，更是为了伤害我们的人。”"><a href="#活下去，为了关心我们的人，更是为了伤害我们的人。”" class="headerlink" title="活下去，为了关心我们的人，更是为了伤害我们的人。”"></a>活下去，为了关心我们的人，更是为了伤害我们的人。”</h1><p>会计基础 (全国会计从业资格考试专用教材编写组编) 2016/10/30</p>
+<p>会计是以货币为主要计量单位，运用专门的方法，核算和监督一个单位经济活动的一种经济管理工作</p>
+<p>会计方法具体包括会计核算方法、会计分析方法和会计检查方法等</p>
+<p>四柱清册</p>
+<p>所谓 “四柱 “，即 “旧管 “、”新收 “、”开除 “、 “实在 “，其含义相当于现代会计中的 “期初结存 “、 “本期收入 “、”本期支出 “、”期末结存 “。 “四柱 “ 之间的结算关系为 “旧管+新收=开除+实在 “，编制的会计报表称为 “四柱清册 “。</p>
+<p>从单式记账法过渡到复式记账法，是近代会计的形成标志</p>
+<p>我国于2006年发布了包括1 项基本准则和38 项具体会计准则的企业会计准则体系，并于2007 年1 月1 日在上市公司施行，这是我国会计的第三次大变革</p>
+<p>全面引进了苏联的会计模式，建立了适应计划经济体制的会计制度，这是我国会计的第二次变革;</p>
+<p>西方借贷记账法传入我国，并使得传统的中式会计得到改良，出现了中式会计与西式会计并存的局面，这是我国会计的第一次变革;</p>
+<p>会计对象是指会计核算和监督的内容，具体是指社会再生产过程中能以货币表现的经济活动，即资金运动或价值运动 。</p>
+<p>会计核算方法体系由填制和审核会计凭证、设置会计科目和账户、复式记账、登记会计账簿、成本计算、财产清查、编制财务会计报告等专门方法构成 。</p>
+<h1 id="会计基本假设包括会计主体、持续经营、会计分期和货币计量四项-。"><a href="#会计基本假设包括会计主体、持续经营、会计分期和货币计量四项-。" class="headerlink" title="会计基本假设包括会计主体、持续经营、会计分期和货币计量四项 。"></a>会计基本假设包括会计主体、持续经营、会计分期和货币计量四项 。</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2016/08/14/算法/最小二乘法/" data-id="cjawd5pcp00109owew8crcry5" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-生活杂谈/注销账号" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/11/生活杂谈/注销账号/" class="article-date">
-  <time datetime="2016-08-11T11:00:00.000Z" itemprop="datePublished">2016/08/11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/11/生活杂谈/注销账号/">注销账号</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在逛豆瓣，看评论的时候，发现有些账号竟然显示已注销，让我大吃一惊。</p>
-        
-          <p class="article-more-link">
-            <a href="/2016/08/11/生活杂谈/注销账号/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2016/08/11/生活杂谈/注销账号/" data-id="cjawd5pco000y9oweit2ya86g" class="article-share-link">Share</a>
+      <a data-url="http://www.itrayweb.com/2016/08/23/生活杂谈/读书笔记/" data-id="cjgc0cawz0009mgwege5olpfm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-生活杂谈/工作体会" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/07/30/生活杂谈/工作体会/" class="article-date">
-  <time datetime="2016-07-30T05:00:00.000Z" itemprop="datePublished">2016/07/30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/30/生活杂谈/工作体会/">工作体会</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="作为开发人员："><a href="#作为开发人员：" class="headerlink" title="作为开发人员："></a>作为开发人员：</h2><ul>
-<li><p>遵守软件编程规范，积极构建可读性高的代码(保证自己在半年之后能看懂)；</p>
-</li>
-<li><p>编码确实很牛逼，但是这种观点只有懂行的人认同，行外人一直觉得so easy，保持态度谦逊；</p>
-</li>
-<li><p>精研自己的单一技能，了解业内主流软件开发语言及工具，因为你是软件工程师，客户及老板会理所当然的认为只要是软件相关的你都应该懂；</p>
-</li>
-</ul>
-<h2 id="项目管理人员（负责项目具体开发管理）："><a href="#项目管理人员（负责项目具体开发管理）：" class="headerlink" title="项目管理人员（负责项目具体开发管理）："></a>项目管理人员（负责项目具体开发管理）：</h2><ul>
-<li><p>避免开发人员直接在客户现场开发，需要客户现场环境测试的，只做测试及Bug修复，禁止修改功能性需求；</p>
-</li>
-<li><p>需求确认永远作为第一优先级；一方面可以让客户认可软件的成本在提高，另一方面提高开发人员的效率；</p>
-</li>
-<li><p>定制项目以实现客户的最低需求为基本方向，除非客户主动要求或提升公司形象，不过多开发逻辑性判断功能（例如：输入框合理性判断，自动纠错）；</p>
-</li>
-<li><p>最重要的：沟通好上下级。</p>
-</li>
-</ul>
-<h2 id="项目负责人（特指不负责具体项目开发管理工作）"><a href="#项目负责人（特指不负责具体项目开发管理工作）" class="headerlink" title="项目负责人（特指不负责具体项目开发管理工作）"></a>项目负责人（特指不负责具体项目开发管理工作）</h2><ul>
-<li><p>不主动给开发人员派发工作，额外工作下发给项目管理人员，尊重项目管理人员；</p>
-</li>
-<li><p>积极帮助项目管理人员解决问题。</p>
-</li>
-</ul>
-<h2 id="自我管理总结："><a href="#自我管理总结：" class="headerlink" title="自我管理总结："></a>自我管理总结：</h2><ul>
-<li><p>定制项目经费的制定：项目负责人提出项目预算：</p>
-<p>（1）估算方式</p>
-<p>  首先确定技术人员的开发成本，然后double作为项目可实施的最低预算。</p>
-<p>  销售人员：20%，管理人员：20%，技术人员(需求、开发、测试等技术人员)：50%，其他费用（日常办公开销）：10%；</p>
-<p> （2）最终合同款</p>
-<p>  合同款必须大于等于估算预算：结余款直接作为销售人员的奖励（此款项为销售人员自己谈判所得）。</p>
-</li>
-<li><p>项目管理人员拆分软件功能模块，将项目预算合理化分配到软件的功能模块上，以模块为节点来支付软件开发人员的工作薪资。可借鉴销售人员底薪+提成的方式。</p>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2016/07/30/生活杂谈/工作体会/" data-id="cjawd5pcl000u9owe7uv1vq0c" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-生活杂谈/工作规划" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/06/生活杂谈/工作规划/" class="article-date">
-  <time datetime="2016-06-06T13:00:00.000Z" itemprop="datePublished">2016/06/06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/06/生活杂谈/工作规划/">工作规划</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>以前一直讨厌被人指明方向前进，但现在的自己却渴望能有人来给我指明方向，让我知道我的路究竟能伸向哪儿。最近看过很多IT的行业前辈的简历，结合自己的有限经历简单的梳理下（后续持续跟进，也作为自己的参考）：</p>
-<p>(1) 赵某，生于70年代末期，作为中国最早期的一批程序员。本科毕业后进入一家国企做软件开发两年，两年期间积极备考研究生，考上北京某大学计算机研究生。遂辞职攻读硕士学位，研究生毕业，继续工作3年，考取某大学博士学位，辞职攻读博士学位。毕业后，直接留校作为一名任课老师。最后，到一所不太出名的大学拿到副教授头衔。</p>
-<p>评价：此人生轨迹可作为喜欢稳定，能静下心且对一直保持学习心态的人参考，预估家庭生活能维持小康，人生道路会持续平静安逸。虽有生活压力，但也能平稳渡过。</p>
-<p>(2)钱某，生于80年代，现在作为人到中年的大叔一枚，本科毕业直接北京工作，无户口。08年房价刚涨起来时，在5环附近购房一套（有远见）。一直混迹于各个IT公司，对技术方面追求较低，努力往业务及销售方面进军，比较能忽悠人(销售人员的必备技能)。</p>
-<p>评价：因其有了北京一套房子，故其若在北京待不下去，可去二、三线城市发展，不用太担心没有工作而无法养家。此路需要有一定的可持续收益资产作为前提。</p>
-<p>(3)孙某，生于70或80年代，是否有房未知，毕业后在国企或事业单位任职，拿到北京户口，但因其没有成长为真正的管理人员，遂10年或20年间稳定于几家公司，月薪20k左右，趋于稳定。</p>
-<p>评价：有户口，已经可以在北京一直待下去了，有房更加安稳，无房，压力随着年龄的增长会一直持续，直到子女成人，可选择回老家或其他房子便宜点的地方买房养老。</p>
-<p>(4)李某，毕业后在北京工作n年，回家发展的念头升起后，考取家乡公务员。</p>
-<p>评价：漂泊的游子归乡，是否能适应家乡的生活是关键。</p>
-<p>(5)周某，在北京攒了一点小钱，去其他地方买房结婚成家，找一家公司继续上班或自己能找到小本生意维持生计。</p>
-<p>评价：大多数人的无奈之举也是必由之路。</p>
-<p>(1)条路适合大多数没有梦想却想好有一定地位的人去尝试。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2016/06/06/生活杂谈/工作规划/" data-id="cjawd5pcn000w9owele08zoqo" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-OpenGL/QtCreator编译learnopengl的HelloWindow" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/04/08/OpenGL/QtCreator编译learnopengl的HelloWindow/" class="article-date">
-  <time datetime="2016-04-08T03:00:00.000Z" itemprop="datePublished">2016/04/08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/08/OpenGL/QtCreator编译learnopengl的HelloWindow/">QtCreator编译learnopengl的HelloWindow</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="http://www.learnopengl.com/#!Getting-started/Hello-Window" target="_blank" rel="noopener">源码</a></p>
-        
-          <p class="article-more-link">
-            <a href="/2016/04/08/OpenGL/QtCreator编译learnopengl的HelloWindow/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2016/04/08/OpenGL/QtCreator编译learnopengl的HelloWindow/" data-id="cjawd5pbx00039owexrekipch" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenGL/">OpenGL</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-OpenGL/Ubuntu14.04下编译GLFW3.1.2" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/04/07/OpenGL/Ubuntu14.04下编译GLFW3.1.2/" class="article-date">
-  <time datetime="2016-04-07T11:00:00.000Z" itemprop="datePublished">2016/04/07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/07/OpenGL/Ubuntu14.04下编译GLFW3.1.2/">Ubuntu14.04下编译GLFW3.1.2</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="http://www.glfw.org/download.html" target="_blank" rel="noopener">glfw</a></p>
-        
-          <p class="article-more-link">
-            <a href="/2016/04/07/OpenGL/Ubuntu14.04下编译GLFW3.1.2/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2016/04/07/OpenGL/Ubuntu14.04下编译GLFW3.1.2/" data-id="cjawd5pbz00049owelljzt1ib" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenGL/">OpenGL</a></li></ul>
 
     </footer>
   </div>
@@ -545,7 +679,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/3/">&laquo; 上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">下一页 &raquo;</a>
+    <a class="extend prev" rel="prev" href="/page/3/">&laquo; 上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/">下一页 &raquo;</a>
   </nav>
 
 </section>
@@ -559,7 +693,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenGL/">OpenGL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/boost/">boost</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/欢迎/">欢迎</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/电影评论/">电影评论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网站博客/">网站博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenGL/">OpenGL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/QGis/">QGis</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/boost/">boost</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/欢迎/">欢迎</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/电影评论/">电影评论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网站博客/">网站博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
     </div>
   </div>
 
@@ -569,7 +703,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/OpenGL/" style="font-size: 12px;">OpenGL</a> <a href="/tags/boost/" style="font-size: 18px;">boost</a> <a href="/tags/欢迎/" style="font-size: 10px;">欢迎</a> <a href="/tags/生活杂谈/" style="font-size: 16px;">生活杂谈</a> <a href="/tags/电影评论/" style="font-size: 18px;">电影评论</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/网站博客/" style="font-size: 14px;">网站博客</a> <a href="/tags/设计模式/" style="font-size: 20px;">设计模式</a>
+      <a href="/tags/C/" style="font-size: 12px;">C++</a> <a href="/tags/OpenGL/" style="font-size: 12px;">OpenGL</a> <a href="/tags/QGis/" style="font-size: 10px;">QGis</a> <a href="/tags/boost/" style="font-size: 16px;">boost</a> <a href="/tags/欢迎/" style="font-size: 10px;">欢迎</a> <a href="/tags/生活杂谈/" style="font-size: 18px;">生活杂谈</a> <a href="/tags/电影评论/" style="font-size: 16px;">电影评论</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/网站博客/" style="font-size: 14px;">网站博客</a> <a href="/tags/设计模式/" style="font-size: 20px;">设计模式</a>
     </div>
   </div>
 
@@ -578,7 +712,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/12/">十二月 2009</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/12/">十二月 2009</a></li></ul>
     </div>
   </div>
 
@@ -591,23 +725,23 @@
       <ul>
         
           <li>
-            <a href="/2017/12/06/hexo/hexo博客中插入图片、音乐/">hexo博客中插入图片、音乐</a>
+            <a href="/2018/01/24/C++/system()函数危害/">system()函数危害</a>
           </li>
         
           <li>
-            <a href="/2017/12/06/hexo/hexo插件-百度、谷歌搜索引擎站点收录/">hexo插件:百度、谷歌搜索引擎站点收录</a>
+            <a href="/2018/01/20/C++/如何使用C++新特性避免错误/">如何使用C++新特性避免错误</a>
           </li>
         
           <li>
-            <a href="/2017/12/06/hexo/hexo插件-RSS订阅/">hexo插件:RSS订阅</a>
+            <a href="/2018/01/10/生活杂谈/寻找元理/">寻找元理</a>
           </li>
         
           <li>
-            <a href="/2017/12/04/设计模式/设计模式之命令模式Command/">设计模式之命令模式Command</a>
+            <a href="/2018/01/04/生活杂谈/现实与网络/">现实与网络</a>
           </li>
         
           <li>
-            <a href="/2017/12/04/设计模式/设计模式之装饰模式Decorator/">设计模式之装饰模式Decorator</a>
+            <a href="/2017/12/08/QGis/编译QGis/">编译QGis</a>
           </li>
         
       </ul>
@@ -622,8 +756,8 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2017 Ray<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      &copy; 2018 Ray<br>
+      If you have any questions,please feel free to contact me at Email: <a href="243545305@qq.com" target="_blank">243545305@qq.com</a>
     </div>
   </div>
 </footer>

@@ -69,6 +69,345 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-生活杂谈/塔罗卡牌：愚人" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/15/生活杂谈/塔罗卡牌：愚人/" class="article-date">
+  <time datetime="2016-08-15T11:00:00.000Z" itemprop="datePublished">2016/08/15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/15/生活杂谈/塔罗卡牌：愚人/">塔罗卡牌：愚人</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>作为第一张卡牌,从0开始,揭示人从无到有必然需要迈出第一步.</p>
+        
+          <p class="article-more-link">
+            <a href="/2016/08/15/生活杂谈/塔罗卡牌：愚人/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2016/08/15/生活杂谈/塔罗卡牌：愚人/" data-id="cjawfl4sx000s0kwekziq4426" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-算法/最小二乘法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/14/算法/最小二乘法/" class="article-date">
+  <time datetime="2016-08-14T13:00:22.000Z" itemprop="datePublished">2016/08/14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/14/算法/最小二乘法/">最小二乘法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p>1.原理：</p>
+<p>2.代码：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LeastSquare</span>&#123;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">double</span> a, b;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"></span><br><span class="line">    LeastSquare(<span class="keyword">const</span> <span class="built_in">vector</span>&lt;<span class="keyword">double</span>&gt;&amp; x, <span class="keyword">const</span> <span class="built_in">vector</span>&lt;<span class="keyword">double</span>&gt;&amp; y)</span><br><span class="line"></span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">double</span> t1=<span class="number">0</span>, t2=<span class="number">0</span>, t3=<span class="number">0</span>, t4=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;x.size(); ++i)</span><br><span class="line"></span><br><span class="line">        &#123;</span><br><span class="line"></span><br><span class="line">            t1 += x[i]*x[i];</span><br><span class="line"></span><br><span class="line">            t2 += x[i];</span><br><span class="line"></span><br><span class="line">            t3 += x[i]*y[i];</span><br><span class="line"></span><br><span class="line">            t4 += y[i];</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        a = (t3*x.size() - t2*t4) / (t1*x.size() - t2*t2);</span><br><span class="line"></span><br><span class="line">        b = (t1*t4 - t2*t3) / (t1*x.size() - t2*t2);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">double</span> <span class="title">getY</span><span class="params">(<span class="keyword">const</span> <span class="keyword">double</span> x)</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> a*x + b;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span> <span class="keyword">const</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt;<span class="string">"y = "</span>&lt;&lt;a&lt;&lt;<span class="string">"x + "</span>&lt;&lt;b&lt;&lt;<span class="string">"\n"</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>3.注意事项：</p>
+<p>x,y的值很大时，会造成t1,t3的值越界.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2016/08/14/算法/最小二乘法/" data-id="cjawfl4te001g0kwewhr12noa" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-生活杂谈/注销账号" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/11/生活杂谈/注销账号/" class="article-date">
+  <time datetime="2016-08-11T11:00:00.000Z" itemprop="datePublished">2016/08/11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/11/生活杂谈/注销账号/">注销账号</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在逛豆瓣，看评论的时候，发现有些账号竟然显示已注销，让我大吃一惊。</p>
+        
+          <p class="article-more-link">
+            <a href="/2016/08/11/生活杂谈/注销账号/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2016/08/11/生活杂谈/注销账号/" data-id="cjawfl4t300100kwexfb9edmt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-生活杂谈/工作体会" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/30/生活杂谈/工作体会/" class="article-date">
+  <time datetime="2016-07-30T05:00:00.000Z" itemprop="datePublished">2016/07/30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/30/生活杂谈/工作体会/">工作体会</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="作为开发人员："><a href="#作为开发人员：" class="headerlink" title="作为开发人员："></a>作为开发人员：</h2><ul>
+<li><p>遵守软件编程规范，积极构建可读性高的代码(保证自己在半年之后能看懂)；</p>
+</li>
+<li><p>编码确实很牛逼，但是这种观点只有懂行的人认同，行外人一直觉得so easy，保持态度谦逊；</p>
+</li>
+<li><p>精研自己的单一技能，了解业内主流软件开发语言及工具，因为你是软件工程师，客户及老板会理所当然的认为只要是软件相关的你都应该懂；</p>
+</li>
+</ul>
+<h2 id="项目管理人员（负责项目具体开发管理）："><a href="#项目管理人员（负责项目具体开发管理）：" class="headerlink" title="项目管理人员（负责项目具体开发管理）："></a>项目管理人员（负责项目具体开发管理）：</h2><ul>
+<li><p>避免开发人员直接在客户现场开发，需要客户现场环境测试的，只做测试及Bug修复，禁止修改功能性需求；</p>
+</li>
+<li><p>需求确认永远作为第一优先级；一方面可以让客户认可软件的成本在提高，另一方面提高开发人员的效率；</p>
+</li>
+<li><p>定制项目以实现客户的最低需求为基本方向，除非客户主动要求或提升公司形象，不过多开发逻辑性判断功能（例如：输入框合理性判断，自动纠错）；</p>
+</li>
+<li><p>最重要的：沟通好上下级。</p>
+</li>
+</ul>
+<h2 id="项目负责人（特指不负责具体项目开发管理工作）"><a href="#项目负责人（特指不负责具体项目开发管理工作）" class="headerlink" title="项目负责人（特指不负责具体项目开发管理工作）"></a>项目负责人（特指不负责具体项目开发管理工作）</h2><ul>
+<li><p>不主动给开发人员派发工作，额外工作下发给项目管理人员，尊重项目管理人员；</p>
+</li>
+<li><p>积极帮助项目管理人员解决问题。</p>
+</li>
+</ul>
+<h2 id="自我管理总结："><a href="#自我管理总结：" class="headerlink" title="自我管理总结："></a>自我管理总结：</h2><ul>
+<li><p>定制项目经费的制定：项目负责人提出项目预算：</p>
+<p>（1）估算方式</p>
+<p>  首先确定技术人员的开发成本，然后double作为项目可实施的最低预算。</p>
+<p>  销售人员：20%，管理人员：20%，技术人员(需求、开发、测试等技术人员)：50%，其他费用（日常办公开销）：10%；</p>
+<p> （2）最终合同款</p>
+<p>  合同款必须大于等于估算预算：结余款直接作为销售人员的奖励（此款项为销售人员自己谈判所得）。</p>
+</li>
+<li><p>项目管理人员拆分软件功能模块，将项目预算合理化分配到软件的功能模块上，以模块为节点来支付软件开发人员的工作薪资。可借鉴销售人员底薪+提成的方式。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2016/07/30/生活杂谈/工作体会/" data-id="cjawfl4sz000u0kwevgmrobd4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-生活杂谈/工作规划" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/06/生活杂谈/工作规划/" class="article-date">
+  <time datetime="2016-06-06T13:00:00.000Z" itemprop="datePublished">2016/06/06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/06/生活杂谈/工作规划/">工作规划</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以前一直讨厌被人指明方向前进，但现在的自己却渴望能有人来给我指明方向，让我知道我的路究竟能伸向哪儿。最近看过很多IT的行业前辈的简历，结合自己的有限经历简单的梳理下（后续持续跟进，也作为自己的参考）：</p>
+<p>(1) 赵某，生于70年代末期，作为中国最早期的一批程序员。本科毕业后进入一家国企做软件开发两年，两年期间积极备考研究生，考上北京某大学计算机研究生。遂辞职攻读硕士学位，研究生毕业，继续工作3年，考取某大学博士学位，辞职攻读博士学位。毕业后，直接留校作为一名任课老师。最后，到一所不太出名的大学拿到副教授头衔。</p>
+<p>评价：此人生轨迹可作为喜欢稳定，能静下心且对一直保持学习心态的人参考，预估家庭生活能维持小康，人生道路会持续平静安逸。虽有生活压力，但也能平稳渡过。</p>
+<p>(2)钱某，生于80年代，现在作为人到中年的大叔一枚，本科毕业直接北京工作，无户口。08年房价刚涨起来时，在5环附近购房一套（有远见）。一直混迹于各个IT公司，对技术方面追求较低，努力往业务及销售方面进军，比较能忽悠人(销售人员的必备技能)。</p>
+<p>评价：因其有了北京一套房子，故其若在北京待不下去，可去二、三线城市发展，不用太担心没有工作而无法养家。此路需要有一定的可持续收益资产作为前提。</p>
+<p>(3)孙某，生于70或80年代，是否有房未知，毕业后在国企或事业单位任职，拿到北京户口，但因其没有成长为真正的管理人员，遂10年或20年间稳定于几家公司，月薪20k左右，趋于稳定。</p>
+<p>评价：有户口，已经可以在北京一直待下去了，有房更加安稳，无房，压力随着年龄的增长会一直持续，直到子女成人，可选择回老家或其他房子便宜点的地方买房养老。</p>
+<p>(4)李某，毕业后在北京工作n年，回家发展的念头升起后，考取家乡公务员。</p>
+<p>评价：漂泊的游子归乡，是否能适应家乡的生活是关键。</p>
+<p>(5)周某，在北京攒了一点小钱，去其他地方买房结婚成家，找一家公司继续上班或自己能找到小本生意维持生计。</p>
+<p>评价：大多数人的无奈之举也是必由之路。</p>
+<p>(1)条路适合大多数没有梦想却想好有一定地位的人去尝试。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2016/06/06/生活杂谈/工作规划/" data-id="cjawfl4t0000w0kwe3yac6kmo" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-OpenGL/QtCreator编译learnopengl的HelloWindow" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/08/OpenGL/QtCreator编译learnopengl的HelloWindow/" class="article-date">
+  <time datetime="2016-04-08T03:00:00.000Z" itemprop="datePublished">2016/04/08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/08/OpenGL/QtCreator编译learnopengl的HelloWindow/">QtCreator编译learnopengl的HelloWindow</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://www.learnopengl.com/#!Getting-started/Hello-Window" target="_blank" rel="noopener">源码</a></p>
+        
+          <p class="article-more-link">
+            <a href="/2016/04/08/OpenGL/QtCreator编译learnopengl的HelloWindow/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2016/04/08/OpenGL/QtCreator编译learnopengl的HelloWindow/" data-id="cjawfl4sd00040kwerhj3og29" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenGL/">OpenGL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-OpenGL/Ubuntu14.04下编译GLFW3.1.2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/07/OpenGL/Ubuntu14.04下编译GLFW3.1.2/" class="article-date">
+  <time datetime="2016-04-07T11:00:00.000Z" itemprop="datePublished">2016/04/07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/07/OpenGL/Ubuntu14.04下编译GLFW3.1.2/">Ubuntu14.04下编译GLFW3.1.2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://www.glfw.org/download.html" target="_blank" rel="noopener">glfw</a></p>
+        
+          <p class="article-more-link">
+            <a href="/2016/04/07/OpenGL/Ubuntu14.04下编译GLFW3.1.2/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.itrayweb.com/2016/04/07/OpenGL/Ubuntu14.04下编译GLFW3.1.2/" data-id="cjawfl4sc00030kwelac7h5tt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenGL/">OpenGL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-电影评论/僵尸肖恩" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2012/10/28/电影评论/僵尸肖恩/" class="article-date">
@@ -96,7 +435,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2012/10/28/电影评论/僵尸肖恩/" data-id="cjawfj8qn0003nswevvamku9r" class="article-share-link">Share</a>
+      <a data-url="http://www.itrayweb.com/2012/10/28/电影评论/僵尸肖恩/" data-id="cjawfl4t400120kwesttz3l8a" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电影评论/">电影评论</a></li></ul>
@@ -135,7 +474,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2012/10/28/电影评论/新抢钱夫妻/" data-id="cjawfj8qn0005nswe5iaeoxw0" class="article-share-link">Share</a>
+      <a data-url="http://www.itrayweb.com/2012/10/28/电影评论/新抢钱夫妻/" data-id="cjawfl4t700160kwe7vi7pib4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电影评论/">电影评论</a></li></ul>
@@ -147,10 +486,10 @@
 
 
   
-    <article id="post-电影评论/冒牌天神" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-生活杂谈/我的外婆" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2012/10/26/电影评论/冒牌天神/" class="article-date">
-  <time datetime="2012-10-26T13:00:22.000Z" itemprop="datePublished">2012/10/26</time>
+    <a href="/2012/10/28/生活杂谈/我的外婆/" class="article-date">
+  <time datetime="2012-10-28T11:00:00.000Z" itemprop="datePublished">2012/10/28</time>
 </a>
     
   </div>
@@ -161,46 +500,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2012/10/26/电影评论/冒牌天神/">冒牌天神</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>温馨而又浪漫的好莱坞大片，夸张搞笑的故事情节让人捧腹大笑的同时，又带给人深思，是一部经典之作。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2012/10/26/电影评论/冒牌天神/" data-id="cjawfj8pr0000nswedta775u8" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电影评论/">电影评论</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-电影评论/飞越疯人院" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2012/10/20/电影评论/飞越疯人院/" class="article-date">
-  <time datetime="2012-10-20T13:00:22.000Z" itemprop="datePublished">2012/10/20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/10/20/电影评论/飞越疯人院/">飞越疯人院</a>
+      <a class="article-title" href="/2012/10/28/生活杂谈/我的外婆/">我的外婆</a>
     </h1>
   
 
@@ -209,177 +509,21 @@
     <div class="article-entry" itemprop="articleBody">
       
         <a id="more"></a>
-<p>现实的世界，本就是个二元的世界。当人们处于某一地位的时候，必将有对立的地位与之对应。<br>疯人院是小小社会的一个缩影，统治者制造游戏规则，被统治者只能遵守。当被统治者中小部分人觉醒时，并不能改变任何规则，而game over只能是这部分人的唯一下场。可悲的世界，我们只能往金字塔的上层走，这是我们的唯一出路。当你成为统治者时，你才有有机会改变自己的一丝命运，仅仅只能是一丝，而不是全部。</p>
-
+<pre><code>偶然间在《读者》上面看到了一篇描写外婆的文章，不禁想起自己的外婆，心里酸酸的，总感觉有眼泪掉下来。
+童年的岁月总是美好的，每次想起来都觉得自己很幸福。
+爸爸是个孤儿，自小就失去了父母，因此我从没有体会到爷爷奶奶的宠爱。每当看见邻居家的孩子拿着从爷爷奶奶那里得到的好吃的，心里总是很羡慕！
+我有4个姨姨，她们跟我妈的年龄差距都不大，因此家里的孩子都跟我差不多大。由于外公外婆一直都健在，所以我妈跟姨姨的亲情从来不曾变淡。每逢节假日，我跟姨姨家的几个孩子都不约而同的相聚到外婆家。外婆家里住的是窑洞，冬暖夏凉，外公外婆也都比较喜欢孩子，每次我们来了都很高心。至今我还清晰地记得，外婆家里的房梁上总是挂着一个菜篮子，这也是我们最挂念的地方。姨姨们来时买的好吃的大都放在篮子里，而这些东西都是平时舍不得买的。当我们在外婆家的时候，外婆每天都会拿下来一两次，从中取出一些，分给我们几个小馋猫，但是孩子的心里从来都是得不到满足的，当我们吃完的时候，我们总想再得到一些。但是篮子的高度在那时候的自己眼里是那样的高不可攀，当外婆重新将篮子挂在房梁上的时候，我们只能傻傻的站在底下，仰着头看着它在那儿摇晃，心里期盼着它能自己掉下来，让我们可以再次吃到里面的东西。
+随着年龄的增长，小时候发生的事情已经变得越来越模糊，但我们几个的欢声笑语从不曾磨灭。
+现在我们都已经长大了，几个姐姐也已经结婚生子。我们的个头都已经可以自己够上菜篮子，但是那些美好的时光却再也找不回来。岁月总是无情地，随着时间的流逝，外公外婆越显苍老。尤其是去年，外婆因为高血压造成半身瘫痪，只能依靠轮椅生活。但她依然那么的希望我们能够天天陪在他身边，外婆的记忆力开始减退，当我们去时，总是需要想半天才能想起我们的名字。然后就开始念叨，我们为什么这么长时间都没有去她的跟前看她，还让我们把她接到我们家里去住几天，她说：“我在大女儿家住一星期，二女儿家住一星期，然后三女儿……”。但是当我们把她接到我跟几个姨姨家的时候，没待几天，她就又开始念叨要回自己家里。老人的心中总是放不下家人，总想让自己的几个儿女都能够陪在自己身边。
+这就是我的外婆，一个爱我们，疼我们的好外婆。
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2012/10/20/电影评论/飞越疯人院/" data-id="cjawfj8r2000gnswevd2k0tnl" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电影评论/">电影评论</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-电影评论/海豚湾" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2012/10/08/电影评论/海豚湾/" class="article-date">
-  <time datetime="2012-10-08T13:00:22.000Z" itemprop="datePublished">2012/10/08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/10/08/电影评论/海豚湾/">海豚湾</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>生命总是显得很脆弱，自命万物之主的人类在其中扮演着越来越重要的作用。</p>
-        
-          <p class="article-more-link">
-            <a href="/2012/10/08/电影评论/海豚湾/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2012/10/08/电影评论/海豚湾/" data-id="cjawfj8qn0006nswexle736ln" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电影评论/">电影评论</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-电影评论/无聊的电影" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2012/10/06/电影评论/无聊的电影/" class="article-date">
-  <time datetime="2012-10-06T13:00:22.000Z" itemprop="datePublished">2012/10/06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/10/06/电影评论/无聊的电影/">无聊的电影</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>《泰坦尼克》和《老无所依》都是经典的奥斯卡大片，但是心态的不同却没有让人深入其中，体味出导演想要表达的价值取向，完全的乏味……</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2012/10/06/电影评论/无聊的电影/" data-id="cjawfj8qn0009nswe0ewbou81" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电影评论/">电影评论</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-生活杂谈/梦想乡村" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2009/12/25/生活杂谈/梦想乡村/" class="article-date">
-  <time datetime="2009-12-25T11:00:00.000Z" itemprop="datePublished">2009/12/25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2009/12/25/生活杂谈/梦想乡村/">梦想乡村</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <a id="more"></a>
-<p>城市的生活让人感到孤单，即便现在的自己每天都活跃在同学之间，也没有农村的日子快乐。家乡的村庄，不管你走到哪儿都有人打招呼，各种亲切的称呼（伯伯、叔叔、婶婶、姨姨、哥哥、姐姐…）总是回荡在耳边，我们好像时刻都能感觉到别人的关心。一户户房屋紧紧的挨着，不分彼此，从里面总能不时地传来邻居家的吵闹声，在脑海中交织成一幅动人的温馨画面。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2009/12/25/生活杂谈/梦想乡村/" data-id="cjawfj8q70001nswebx5rdcjy" class="article-share-link">Share</a>
+      <a data-url="http://www.itrayweb.com/2012/10/28/生活杂谈/我的外婆/" data-id="cjgc0cax0000amgwe96che8df" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-电影评论/游戏人生" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2009/12/20/电影评论/游戏人生/" class="article-date">
-  <time datetime="2009-12-20T13:00:22.000Z" itemprop="datePublished">2009/12/20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2009/12/20/电影评论/游戏人生/">游戏人生</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <a id="more"></a>
-<p>人生是一场游戏,我希望每个一段时间，重新扮演新的角色。可是，这不是我所能决定。当我出生时，我就被限制为一种角色。但是，我应该有思想的觉悟，当我是弱者时，我没有让别人服从自己的威信，保持沉默是最好解决方法，永远不试图将自己的意见强加于别人身上；当我是强者时，我自会有强者的威信，我仍会沉默，因为自然有大部人赞成我的看法，何必让每个人都必须承认。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.itrayweb.com/2009/12/20/电影评论/游戏人生/" data-id="cjawfj8r2000bnswemcjiyxzf" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电影评论/">电影评论</a></li></ul>
 
     </footer>
   </div>
@@ -392,7 +536,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/4/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
+    <a class="extend prev" rel="prev" href="/page/4/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/">下一页 &raquo;</a>
   </nav>
 
 </section>
@@ -406,7 +550,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenGL/">OpenGL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/boost/">boost</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/欢迎/">欢迎</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/电影评论/">电影评论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网站博客/">网站博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenGL/">OpenGL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/QGis/">QGis</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/boost/">boost</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/欢迎/">欢迎</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活杂谈/">生活杂谈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/电影评论/">电影评论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网站博客/">网站博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
     </div>
   </div>
 
@@ -416,7 +560,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/OpenGL/" style="font-size: 12px;">OpenGL</a> <a href="/tags/boost/" style="font-size: 18px;">boost</a> <a href="/tags/欢迎/" style="font-size: 10px;">欢迎</a> <a href="/tags/生活杂谈/" style="font-size: 16px;">生活杂谈</a> <a href="/tags/电影评论/" style="font-size: 18px;">电影评论</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/网站博客/" style="font-size: 14px;">网站博客</a> <a href="/tags/设计模式/" style="font-size: 20px;">设计模式</a>
+      <a href="/tags/C/" style="font-size: 12px;">C++</a> <a href="/tags/OpenGL/" style="font-size: 12px;">OpenGL</a> <a href="/tags/QGis/" style="font-size: 10px;">QGis</a> <a href="/tags/boost/" style="font-size: 16px;">boost</a> <a href="/tags/欢迎/" style="font-size: 10px;">欢迎</a> <a href="/tags/生活杂谈/" style="font-size: 18px;">生活杂谈</a> <a href="/tags/电影评论/" style="font-size: 16px;">电影评论</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/网站博客/" style="font-size: 14px;">网站博客</a> <a href="/tags/设计模式/" style="font-size: 20px;">设计模式</a>
     </div>
   </div>
 
@@ -425,7 +569,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/12/">十二月 2009</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">十月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/12/">十二月 2009</a></li></ul>
     </div>
   </div>
 
@@ -438,23 +582,23 @@
       <ul>
         
           <li>
-            <a href="/2017/12/06/hexo/hexo博客中插入图片、音乐/">hexo博客中插入图片、音乐</a>
+            <a href="/2018/01/24/C++/system()函数危害/">system()函数危害</a>
           </li>
         
           <li>
-            <a href="/2017/12/06/hexo/hexo插件-百度、谷歌搜索引擎站点收录/">hexo插件:百度、谷歌搜索引擎站点收录</a>
+            <a href="/2018/01/20/C++/如何使用C++新特性避免错误/">如何使用C++新特性避免错误</a>
           </li>
         
           <li>
-            <a href="/2017/12/06/hexo/hexo插件-RSS订阅/">hexo插件:RSS订阅</a>
+            <a href="/2018/01/10/生活杂谈/寻找元理/">寻找元理</a>
           </li>
         
           <li>
-            <a href="/2017/12/04/设计模式/设计模式之命令模式Command/">设计模式之命令模式Command</a>
+            <a href="/2018/01/04/生活杂谈/现实与网络/">现实与网络</a>
           </li>
         
           <li>
-            <a href="/2017/12/04/设计模式/设计模式之装饰模式Decorator/">设计模式之装饰模式Decorator</a>
+            <a href="/2017/12/08/QGis/编译QGis/">编译QGis</a>
           </li>
         
       </ul>
@@ -469,8 +613,8 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2017 Ray<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      &copy; 2018 Ray<br>
+      If you have any questions,please feel free to contact me at Email: <a href="243545305@qq.com" target="_blank">243545305@qq.com</a>
     </div>
   </div>
 </footer>
